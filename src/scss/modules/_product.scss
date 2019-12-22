@@ -1,0 +1,34 @@
+#how-it-works {
+  margin-top: 50px;
+}
+
+.product {
+  text-align: center;
+  border: black 1px solid;
+
+  .level {
+    background-color: rgb(128, 123, 123);
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 550;
+    padding: 10px 0;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+}
+
+#how-it-works.row {
+  @include mediaquery--sm {
+    flex-direction: column;
+  }
+}

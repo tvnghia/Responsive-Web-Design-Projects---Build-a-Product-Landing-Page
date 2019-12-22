@@ -2,12 +2,6 @@
   width: $sreen-pc;
   max-width: 100%;
   margin: 0 auto;
-  position: relative;
-
-  @include mediaquery--not-lg() {
-    padding-left: $col-gutter;
-    padding-right: $col-gutter;
-  }
 }
 
 .row {
@@ -36,7 +30,7 @@
   }
 }
 
-@include mediaquery--sm() {
+@include mediaquery--md() {
   @for $i from 1 through $col-num {
     .col--md-#{$i} {
       width: percentage($i / $col-num);
@@ -58,4 +52,8 @@
       margin-left: percentage($i / $col-num);
     }
   }
+}
+
+.d-flex {
+  display: flex;
 }

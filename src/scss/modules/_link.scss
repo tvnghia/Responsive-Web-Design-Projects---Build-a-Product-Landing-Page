@@ -1,19 +1,28 @@
-.link {
-  text-decoration: none;
-  color: $dark-color;
-  font-size: $font-size-base;
-  font-weight: $font-weight-normal;
-  transition: all .3s ease;
+.header-link {
+  display: flex;
+  align-items: center;
 
-  &:hover {
-    color: darken($dark-color, 20%);
+  @include mediaquery--sm {
+    flex-direction: column;
   }
 
-  &--primary {
-    color: $primary-color;
+  .nav-link {
+    padding: 0 20px;
 
-    &:hover {
-      color: darken($primary-color, 20%);
+    @include mediaquery--sm {
+      padding: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
     }
   }
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: $font-size-md;
+  color: $primary-color;
 }
