@@ -4,6 +4,7 @@
 @import './base/minireset';
 
 // Base
+@import './base/base';
 @import './base/variables';
 @import './base/mixins';
 @import './base/grid';
@@ -12,7 +13,13 @@
 @import './modules/header';
 @import './modules/link';
 @import './modules/form';
-@import './modules/media';
 @import './modules/video';
 @import './modules/product';
-@import './modules/footer';
+@import './modules/button';
+@import './modules/img';
+@import './modules/typography';
+
+// Layouts 
+@import './layout/container';
+@import './layout/media';
+@import './layout/footer';

@@ -1,40 +1,23 @@
-body {
-  position: relative;
-  background-color: #eee;
+#header {
+  .container {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
-header {
+.header-content {
   padding: 0 20px;
-  min-height: 75px;
+  height: 75px; 
   position: fixed;
   align-items: center;
-  display: flex;
   top: 0;
+  left: 0;
+  right: 0;
   justify-content: space-between;
-  width: 1400px;
   background-color: #eee;
-  max-width: 100%;
-  margin: 0 auto;
 
   @include mediaquery--sm {
     flex-direction: column;
-  }
-
-  h1 {
-    font-size: $font-size-xl;
-    padding-left: 20px;
-
-    @include mediaquery--sm {
-      font-size: $font-size-lg;
-    }
-  }
-}
-
-.nav-brand {
-  display: flex;
-
-  img {
-    max-width: 100%;
-    height: auto;
   }
 }

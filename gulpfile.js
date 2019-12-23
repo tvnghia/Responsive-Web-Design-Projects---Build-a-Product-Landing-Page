@@ -38,7 +38,7 @@ gulp.task('css', () => {
         }
       }))
       .pipe(sourcemap.init())
-      .pipe(sass({ outputStyle: 'compressed' }))
+      .pipe(sass())
       .pipe(autoprefixer({ cascade: false }))
       .pipe(sourcemap.write())
       .pipe(gulp.dest(`${init.destPath}/css`))

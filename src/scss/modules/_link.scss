@@ -1,21 +1,11 @@
-.header-link {
+.link {
   display: flex;
   align-items: center;
+  background-color: #eee;
 
   @include mediaquery--sm {
     flex-direction: column;
-  }
-
-  .nav-link {
-    padding: 0 20px;
-
-    @include mediaquery--sm {
-      padding: 0;
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
+    width: 100%;
   }
 }
 
@@ -25,4 +15,13 @@
   cursor: pointer;
   font-size: $font-size-md;
   color: $primary-color;
+  padding: 0 20px;
+
+  @include mediaquery--sm {
+    padding: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
 }

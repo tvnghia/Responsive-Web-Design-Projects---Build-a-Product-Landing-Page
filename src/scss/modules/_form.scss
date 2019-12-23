@@ -7,12 +7,6 @@ form {
   }
 }
 
-h3 {
-  font-size: $font-size-lg;
-  margin-bottom: 20px;
-  font-weight: 550;
-}
-
 .control {
   box-sizing: border-box;
   width: 250px;
@@ -27,18 +21,3 @@ input {
   margin-bottom: 15px;
 }
 
-button {
-  background-color: yellow;
-  border: none;
-  border-radius: 5px;
-  height: 30px;
-  width: 120px;
-  box-sizing: border-box;
-  font-weight: 900;
-  font-size: $font-size-sm;
-
-  &:hover {
-    background-color: yellowgreen;
-    transition: 3s;
-  }
-}

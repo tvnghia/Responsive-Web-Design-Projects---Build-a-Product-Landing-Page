@@ -1,0 +1,24 @@
+h1 {
+  font-size: $font-size-xl;
+  padding-left: 20px;
+
+  @include mediaquery--sm {
+    font-size: $font-size-lg;
+  }
+}
+
+h3 {
+  font-size: $font-size-lg;
+  margin-bottom: 20px;
+  font-weight: 550;
+}
+
+h2 {
+  font-size: $font-size-lg;
+  font-weight: 550;
+}
+
+p {
+  font-size: $font-size-md;
+  line-height: 1.6;
+}
